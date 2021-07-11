@@ -10,7 +10,7 @@ function [Q,R]= givens_QR(A)
     for i=n:-1:j+1
       x=R(:,j);
       if norm([x(i-1),x(i)])>0
-        c=x(i-1)/norm([x(i-1),x(i
+        c=x(i-1)/norm([x(i-1),x(i)]);
         s=-x(i)/norm([x(i-1),x(i)]);
         G=eye(n);
         G([i-1,i],[i-1,i])=[c,s;-s,c];

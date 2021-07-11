@@ -1,5 +1,4 @@
 % Matriz tridimensional superior
-
 function x=SELA_trisup(A,b)
 
   M=size(A,1);
